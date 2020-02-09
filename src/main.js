@@ -2,39 +2,30 @@
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
 import DefaultLayout from '~/layouts/Default.vue'
-import VueScrollTo from 'vue-scrollto'
-import VueFuse from 'vue-fuse'
 
-export default function (Vue, { router, head, isClient }) {
+export default function(Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
 
-  Vue.use(VueScrollTo, {
-    duration: 500,
-    easing: "ease",
-  })
-
-  Vue.use(VueFuse)
-
   head.meta.push({
     name: 'keywords',
-    content: 'Gridsome,Vue,Tailwind,Tailwind CSS,JavaScript,HTML,CSS,Vue.js,VueJS'
+    content:
+      'fullstack, full-stack, startup, web development, javascript, vuejs, reactjs, laravel, php'
   })
 
   head.meta.push({
     name: 'description',
-    content: 'Gridsome Portfolio Starter'
+    content:
+      'Startup technology consultant and UI/UX expert helping small-business entrepreneurs deliver valuable solutions to their valuable customers.'
   })
 
   head.meta.push({
     name: 'author',
-    content: 'Andre Madarang'
+    content: 'Colyn Brown'
   })
 
-  head.link.push({
-    rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/css?family=Nunito+Sans:400,700'
+  head.meta.push({
+    name: 'og:image',
+    content: '/assets/static/src/favicon.png'
   })
 }
-
-

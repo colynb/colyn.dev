@@ -15,6 +15,8 @@ module.exports = {
   siteName: 'Colyn Brown (InFront Labs, LLC)',
   siteDescription:
     'Startup technology consultant and UI/UX expert helping small-business entrepreneurs deliver valuable solutions to their valuable customers.',
+  siteKeywords:
+    'fullstack, full-stack, startup, web development, javascript, vuejs, reactjs, laravel, php',
   siteUrl: 'https://colyn.dev',
   plugins: [
     {
