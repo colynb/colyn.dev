@@ -1,0 +1,9 @@
+@tailwind base;
+
+@tailwind components;
+
+.container {
+  @apply max-w-screen-md;
+}
+
+@tailwind utilities;
