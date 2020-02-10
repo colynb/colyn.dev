@@ -7,6 +7,9 @@ export default function(Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
 
+  const description =
+    'Startup technology consultant and UI/UX expert helping small-business entrepreneurs deliver valuable solutions to their valuable customers.'
+
   head.meta.push({
     name: 'keywords',
     content:
@@ -15,8 +18,7 @@ export default function(Vue, { router, head, isClient }) {
 
   head.meta.push({
     name: 'description',
-    content:
-      'Startup technology consultant and UI/UX expert helping small-business entrepreneurs deliver valuable solutions to their valuable customers.'
+    content: description
   })
 
   head.meta.push({
@@ -24,8 +26,18 @@ export default function(Vue, { router, head, isClient }) {
     content: 'Colyn Brown'
   })
 
-  // head.meta.push({
-  //   property: 'og:image',
-  //   content: '/assets/static/src/favicon.png'
-  // })
+  head.meta.push({
+    property: 'og:description',
+    content: description
+  })
+
+  head.meta.push({
+    property: 'og:url',
+    content: 'http://colyn.dev'
+  })
+
+  head.meta.push({
+    property: 'og:type',
+    content: 'website'
+  })
 }
