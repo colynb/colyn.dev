@@ -10,7 +10,7 @@ summary: 'Some much needed changes to a popular plugin.'
 
 **Background**
 
-My first commit to the `serverless-dotenv-plugin` was back in Aug 7, 2017. Going on 3 years. In that time, it's not really gone through any major changes. I created it to do some very basic environment variable management that I personally needed while working on a project for my employer. At that time, I had not had much experience doing serverless, particularly with AWS. One thing that I have gotten used to and in fact enjoyed was how other systems that I have been using up to this point, all had decent and intuitive environment variable management. The idea is simple: you create a file named `.env` and add any environment variables you need to that file in a straight key/value format. Not JSON, not YAML, just a list of key/value pairs.
+My first commit to the `serverless-dotenv-plugin` was back on Aug 7, 2017. Going on 3 years. At that time, it's not really gone through any major changes. I created it to do some very basic environment variable management that I personally needed while working on a project for my employer. At that time, I had not had much experience doing serverless, particularly with AWS. One thing that I have gotten used to and in fact enjoyed was how other systems that I have been using up to this point, all had decent and intuitive environment variable management. The idea is simple: you create a file named `.env` and add any environment variables you need to that file in a straight key/value format. Not JSON, not YAML, just a list of key/value pairs.
 
 ```bash
 APP_SECRET=abc1234
