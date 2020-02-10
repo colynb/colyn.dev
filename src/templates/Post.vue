@@ -25,6 +25,7 @@
 query Post ($path: String!) {
   post: post (path: $path) {
     title
+    summary
     date (format: "MMMM D, Y")
     content
     tags {
@@ -39,6 +40,8 @@ query Post ($path: String!) {
 export default {
   metaInfo() {
     return {
+      'og:title': this.$page.post.title,
+      'og:description': this.$page.post.summary,
       title: this.$page.post.title
     }
   }
