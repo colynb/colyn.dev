@@ -27,13 +27,18 @@ export default function(Vue, { router, head, isClient }) {
   })
 
   head.meta.push({
+    property: 'og:title',
+    content: 'Startup Technology Consultant and UI/UX Expert'
+  })
+
+  head.meta.push({
     property: 'og:description',
     content: description
   })
 
   head.meta.push({
     property: 'og:url',
-    content: 'http://colyn.dev'
+    content: 'https://colyn.dev'
   })
 
   head.meta.push({
