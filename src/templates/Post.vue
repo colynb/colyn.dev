@@ -40,9 +40,21 @@ query Post ($path: String!) {
 export default {
   metaInfo() {
     return {
-      'og:title': this.$page.post.title,
-      'og:description': this.$page.post.summary,
-      title: this.$page.post.title
+      title: this.$page.post.title,
+      meta: [
+        {
+          property: 'og:image',
+          content: require('~/favicon.png')
+        },
+        {
+          property: 'og:title',
+          content: this.$page.post.title
+        },
+        {
+          property: 'og:description',
+          content: this.$page.post.summary
+        }
+      ]
     }
   }
 }
