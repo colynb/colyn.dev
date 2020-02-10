@@ -18,12 +18,19 @@ module.exports = {
   siteKeywords:
     'fullstack, full-stack, startup, web development, javascript, vuejs, reactjs, laravel, php',
   siteUrl: 'https://colyn.dev',
+  configureWebpack: {
+    devServer: {
+      watchOptions: {
+        poll: 1000
+      }
+    }
+  },
   plugins: [
     {
       use: '@gridsome/vue-remark',
       options: {
         typeName: 'Documentation', // Required
-        baseDir: './docs', // Where .md files are located
+        baseDir: './src/docs', // Where .md files are located
         pathPrefix: '/docs', // Add route prefix. Optional
         template: './src/templates/Documentation.vue', // Optional
         plugins: [
@@ -37,7 +44,7 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        path: 'blog/**/*.md',
+        path: 'src/blog/**/*.md',
         typeName: 'Post',
         refs: {
           tags: {

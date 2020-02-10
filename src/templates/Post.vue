@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class="container mx-auto my-16">
+    <div class="container mx-auto my-16 Post">
       <h1 class="text-4xl font-bold leading-tight">{{ $page.post.title }}</h1>
       <div class="text-xl text-gray-600 mb-4">{{ $page.post.date }}</div>
       <div class="flex mb-8 text-sm">
@@ -44,5 +44,16 @@ export default {
   }
 }
 </script>
+
+<style>
+.markdown-body a {
+  @apply text-highlight;
+  border-bottom: solid 1px #ccc;
+}
+.markdown-body a:hover {
+  @apply text-primary;
+  border-bottom: solid 1px #666;
+}
+</style>
 
 <style src="../css/github-markdown.css" />

@@ -31,4 +31,15 @@ export default {
 }
 </script>
 
+<style>
+.markdown-body a {
+  @apply text-highlight;
+  border-bottom: solid 1px #ccc;
+}
+.markdown-body a:hover {
+  @apply text-primary;
+  border-bottom: solid 1px #666;
+}
+</style>
+
 <style src="../css/github-markdown.css" />
