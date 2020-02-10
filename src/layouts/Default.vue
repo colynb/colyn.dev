@@ -29,6 +29,14 @@ export default {
   components: {
     HeaderNav,
     Footer
+  },
+  metaInfo: {
+    meta: [
+      {
+        property: 'og:image',
+        content: require('~/favicon.png')
+      }
+    ]
   }
 }
 </script>

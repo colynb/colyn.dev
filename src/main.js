@@ -24,8 +24,8 @@ export default function(Vue, { router, head, isClient }) {
     content: 'Colyn Brown'
   })
 
-  head.meta.push({
-    property: 'og:image',
-    content: '/assets/static/src/favicon.png'
-  })
+  // head.meta.push({
+  //   property: 'og:image',
+  //   content: '/assets/static/src/favicon.png'
+  // })
 }
