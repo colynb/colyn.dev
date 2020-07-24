@@ -7,8 +7,8 @@
           Below is a list of open-source packages that I have created and
           maintain.
         </h2>
-        <p>If you need help with any of these projects, I have opened up some hours each Friday to dedicate to working wirh you 1-on-1. Schedule a time wihe me here:
-        <a href="https://calendly.com/infrontlabs/openhours">Open Hours for Open Source</a>
+        <p>If you need help with any of these projects, I have opened up some hours each Friday to dedicate to working wirh you 1-on-1. Schedule a time with me here:
+        <a href="https://calendly.com/infrontlabs/openhours" class="font-bold">Open Hours for Open Source</a>
       </div>
       <div
         v-for="doc in $page.docs.edges"
