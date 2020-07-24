@@ -3,10 +3,12 @@
     <div class="container mx-auto py-16">
       <div class="bg-primary text-white p-6 mb-6">
         <h1 class="text-3xl font-bold mb-3">Open Source Documentation</h1>
-        <h2 class="text-xl">
+        <h2 class="text-xl mb-6">
           Below is a list of open-source packages that I have created and
           maintain.
         </h2>
+        <p>If you need help with any of these projects, I have opened up some hours each Friday to dedicate to working wirh you 1-on-1. Schedule a time wihe me here:
+        <a href="https://calendly.com/infrontlabs/openhours">Open Hours for Open Source</a>
       </div>
       <div
         v-for="doc in $page.docs.edges"
