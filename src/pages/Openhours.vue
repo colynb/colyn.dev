@@ -33,3 +33,29 @@ p {
   @apply mb-3;
 }
 </style>
+
+<script>
+export default {
+  metaInfo: {
+    title: 'Open Hours for Open Source',
+    meta: [
+      {
+        key: 'og:title',
+        name: 'og:title',
+        content: 'Open Hours for Open Sources',
+      },
+      {
+        key: 'twitter:title',
+        name: 'twitter:title',
+        content: 'Open Hours for Open Source',
+      },
+      {
+        key: 'twitter:desctiption',
+        name: 'twitter:description',
+        content:
+          'Starting Friday, July 24th, I have set aside a couple hours to work with any developer 1:1 on an open-source project.',
+      },
+    ],
+  },
+}
+</script>
