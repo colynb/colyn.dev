@@ -1,0 +1,35 @@
+<template>
+  <Layout
+    ><div class="container mx-auto py-16">
+      <h1 class="text-3xl font-bold leading-tight mb-3">
+        Open Hours for Open Source
+      </h1>
+      <div class="mb-12">
+        <p>
+          Starting July 24 2020, I have set aside an hour
+          <strong>every Friday</strong> to work with any developer one-on-one on
+          an Open Source project. For example, if you're struggling with
+          integrating a Vue or React component library, I might be able to help.
+          No guarantees but sometimes it helps to have a second pair of eyes,
+          and likely we both come away better for it.
+        </p>
+      </div>
+
+      <div>
+        <a
+          href="#"
+          onclick="Calendly.initPopupWidget({url: 'https://calendly.com/infrontlabs/openhours'});return false;"
+          class="inline-block rounded-lg bg-primary text-white text-xl px-5 py-3 font-semibold hover:bg-black mb-1"
+          >Book a time that works best!</a
+        >
+        <p class="text-sm">Available: Every Friday 4pm-6pm (Arizona)</p>
+      </div>
+    </div></Layout
+  >
+</template>
+
+<style scoped>
+p {
+  @apply mb-3;
+}
+</style>
