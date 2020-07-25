@@ -1,9 +1,16 @@
 <template>
   <Layout>
     <div class="container mx-auto py-16">
-      <h1 class="text-3xl font-bold mb-6">
-        serverless-dotenv-plugin CHANGELOG
+      <h1 class="text-3xl font-bold leading-tight">
+        CHANGELOG
       </h1>
+      <div class="mb-12">
+        <a
+          href="https://github.com/colynb/serverless-dotenv-plugin"
+          class="text-2xl leading-none"
+          >serverless-dotenv-plugin</a
+        >
+      </div>
 
       <div class="text-gray-800 text-2xl">
         Version 3.0.0
@@ -85,5 +92,8 @@ a {
   @apply text-primary;
   @apply underline;
   @apply font-semibold;
+}
+a:hover {
+  @apply no-underline;
 }
 </style>
