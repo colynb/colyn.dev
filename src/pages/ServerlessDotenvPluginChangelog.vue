@@ -5,9 +5,10 @@
         serverless-dotenv-plugin CHANGELOG
       </h1>
 
-      <div class="mb-3 text-gray-600 text-2xl">
+      <div class="text-gray-800 text-2xl">
         Version 3.0.0
       </div>
+      <div class="text-gray-500 mb-6">July 24, 2020</div>
       <div class="bg-gray-100 p-4 mb-6">
         <div>
           <p>
@@ -41,9 +42,10 @@
         </div>
       </div>
 
-      <div class="mb-3 text-gray-600 text-2xl">
+      <div class="text-gray-800 text-2xl">
         Version 2.4.2
       </div>
+      <div class="text-gray-500 mb-6">April 18, 2020</div>
       <div class="bg-gray-100 p-4 mb-6">
         <p>
           I just merged a PR today and created version 2.4.2 of the
