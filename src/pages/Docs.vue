@@ -29,9 +29,16 @@
           <g-link :to="doc.node.path" class="text-copy-primary">{{
             doc.node.title
           }}</g-link>
-          <a :href="'https://www.npmjs.com/package/' + doc.node.name"
-            ><img :src="downloadBadge(doc.node.name)" alt="NPM downloads"
-          /></a>
+          <div class="flex">
+            <a
+              class="mr-2"
+              :href="'https://www.npmjs.com/package/' + doc.node.name"
+              ><img :src="downloadBadge(doc.node.name)" alt="NPM downloads"
+            /></a>
+            <a :href="'https://www.github.com/colynb/' + doc.node.name"
+              ><img :src="starsBadge(doc.node.name)" alt="Stars"
+            /></a>
+          </div>
         </h2>
 
         <div class="text-lg mb-3">
@@ -72,7 +79,10 @@ export default {
   },
   methods: {
     downloadBadge: (name) => {
-      return `https://img.shields.io/npm/dw/${name}`
+      return `https://img.shields.io/npm/dt/${name}`
+    },
+    starsBadge: (name) => {
+      return `https://img.shields.io/github/stars/colynb/${name}`
     },
   },
 }
