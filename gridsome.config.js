@@ -5,11 +5,8 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 const tailwind = require('tailwindcss')
-const purgecss = require('@fullhuman/postcss-purgecss')
 
 const postcssPlugins = [tailwind()]
-
-if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss())
 
 module.exports = {
   siteName: 'Colyn Brown (InFront Labs, LLC)',
@@ -21,9 +18,9 @@ module.exports = {
   configureWebpack: {
     devServer: {
       watchOptions: {
-        poll: 1000
-      }
-    }
+        poll: 1000,
+      },
+    },
   },
   plugins: [
     {
@@ -36,10 +33,10 @@ module.exports = {
         plugins: [
           [
             'gridsome-plugin-remark-shiki',
-            { theme: 'Material-Theme-Palenight', skipInline: true }
-          ]
-        ]
-      }
+            { theme: 'Material-Theme-Palenight', skipInline: true },
+          ],
+        ],
+      },
     },
     {
       use: '@gridsome/source-filesystem',
@@ -49,10 +46,10 @@ module.exports = {
         refs: {
           tags: {
             typeName: 'Tag',
-            create: true
-          }
-        }
-      }
+            create: true,
+          },
+        },
+      },
     },
     {
       use: 'gridsome-plugin-rss',
@@ -61,49 +58,49 @@ module.exports = {
         feedOptions: {
           title: 'Gridsome Portfolio Starter Blog',
           feed_url: 'https://colyn.dev/rss.xml',
-          site_url: 'https://colyn.dev/'
+          site_url: 'https://colyn.dev/',
         },
-        feedItemOptions: node => ({
+        feedItemOptions: (node) => ({
           title: node.title,
           description: node.summary,
           url: 'https://colyn.dev' + node.path,
           author: 'Colyn Brown',
-          date: node.date
+          date: node.date,
         }),
         output: {
           dir: './static',
-          name: 'rss.xml'
-        }
-      }
+          name: 'rss.xml',
+        },
+      },
     },
     {
       use: '@gridsome/plugin-sitemap',
       options: {
-        cacheTime: 600000 // default
-      }
-    }
+        cacheTime: 600000, // default
+      },
+    },
   ],
   templates: {
-    Tag: '/tag/:id'
+    Tag: '/tag/:id',
   },
   transformers: {
     remark: {
       plugins: [
         [
           'gridsome-plugin-remark-shiki',
-          { theme: 'Material-Theme-Palenight', skipInline: true }
-        ]
+          { theme: 'Material-Theme-Palenight', skipInline: true },
+        ],
       ],
       externalLinksTarget: '_blank',
       externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
-      anchorClassName: 'icon icon-link'
-    }
+      anchorClassName: 'icon icon-link',
+    },
   },
   css: {
     loaderOptions: {
       postcss: {
-        plugins: postcssPlugins
-      }
-    }
-  }
+        plugins: postcssPlugins,
+      },
+    },
+  },
 }
