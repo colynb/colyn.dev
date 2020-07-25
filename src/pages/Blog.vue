@@ -41,7 +41,7 @@
 
 <page-query>
 query Posts ($page: Int) {
-  posts: allPost (sortBy: "date", order: DESC, perPage: 3, page: $page) @paginate {
+  posts: allPost (sortBy: "date", order: DESC, perPage: 25, page: $page) @paginate {
     totalCount
     pageInfo {
       totalPages
@@ -66,10 +66,10 @@ import PaginationPosts from '../components/PaginationPosts'
 
 export default {
   metaInfo: {
-    title: 'Blog'
+    title: 'Blog',
   },
   components: {
-    PaginationPosts
-  }
+    PaginationPosts,
+  },
 }
 </script>
