@@ -55,6 +55,22 @@ export default {
         content:
           'Starting Friday, July 24th, I have set aside a couple hours to work with any developer 1:1 on an open-source project.',
       },
+      {
+        key: 'twitter:card',
+        name: 'twitter:card',
+        content: 'summary_large_image',
+      },
+      {
+        key: 'twitter:creator',
+        name: 'twitter:creator',
+        content: '@colynb',
+      },
+      {
+        key: 'twitter:image',
+        name: 'twitter:image',
+        content:
+          'https://colyn.dev/assets/static/favicon.7b22250.65fb38b692f638eeb604e9aa2eba7992.png',
+      },
     ],
   },
 }
