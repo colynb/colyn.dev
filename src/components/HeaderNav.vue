@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="p-3 sm:p-0 sm:h-20 container mx-auto flex items-center justify-between"
+    class="p-3 sm:p-0 sm:h-20 container mx-auto md:flex items-center justify-between"
   >
     <div class="uppercase font-bold">
       <g-link to="/" class="flex items-center mb-6 sm:mb-0">

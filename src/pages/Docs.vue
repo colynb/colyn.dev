@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class="container mx-auto py-16">
+    <div class="container mx-auto md:py-16">
       <div class="bg-primary text-white p-6 mb-6">
         <h1 class="text-3xl font-bold mb-3">Open Source Documentation</h1>
         <h2 class="text-xl mb-6">
@@ -24,9 +24,9 @@
         :class="{ 'bg-gray-200': true }"
       >
         <h2
-          class="text-2xl font-bold text-primary leading-none mb-1 flex justify-between items-start"
+          class="text-2xl font-bold text-primary leading-none mb-1 md:flex justify-between items-start"
         >
-          <g-link :to="doc.node.path" class="text-copy-primary">{{
+          <g-link :to="doc.node.path" class="text-copy-primary mb-3 block">{{
             doc.node.title
           }}</g-link>
           <div class="flex">

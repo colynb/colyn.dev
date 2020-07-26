@@ -1,17 +1,17 @@
 <template>
   <Layout
-    ><div class="container mx-auto py-16">
+    ><div class="container mx-auto md:py-16">
       <h1 class="text-3xl font-bold leading-tight mb-3">
         About Me
       </h1>
       <div class="mb-12">
-        <div class="flex">
+        <div class="md:flex">
           <img
             src="https://www.gravatar.com/avatar/f0dc292864631e648736f6b454832970?s=500"
             alt="hero"
-            class="rounded-full w-32 h-32 sm:mr-6"
+            class="rounded-full w-32 h-32 mb-6 sm:mr-6"
           />
-          <div>
+          <div class="mb-3">
             Hi, I'm Colyn Brown. With 20 years of web development and design
             experience and 5 years specializing in frontend architecture and
             product development, I have helped numerous businesses, large and
@@ -28,6 +28,13 @@
             <strong>Infront Labs, LLC</strong>.
           </div>
         </div>
+      </div>
+      <div class="p-3 bg-gray-100 mb-12">
+        Hey, need one-on-one help with an Open Source project? I started
+        <g-link to="/openhours" class="font-bold underline"
+          >Open Hours for Open Source</g-link
+        >, where I devote an hour every week helping out the open source
+        community, for FREE.
       </div>
     </div></Layout
   >
