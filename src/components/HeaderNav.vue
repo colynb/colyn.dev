@@ -22,6 +22,9 @@
 
     <ul class="uppercase font-bold block flex">
       <li class="mr-8 mb-6 lg:mb-0">
+        <g-link to="/about" class="hover:text-black">About Me</g-link>
+      </li>
+      <li class="mr-8 mb-6 lg:mb-0">
         <g-link to="/docs" class="hover:text-black">Open Source</g-link>
       </li>
       <li>
@@ -33,6 +36,6 @@
 
 <script>
 export default {
-  props: ['logoColor']
+  props: ['logoColor'],
 }
 </script>
