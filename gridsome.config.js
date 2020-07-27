@@ -41,6 +41,19 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
+        path: 'src/drafts/**/*.md',
+        typeName: 'Draft',
+        refs: {
+          tags: {
+            typeName: 'Tag',
+            create: true,
+          },
+        },
+      },
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
         path: 'src/blog/**/*.md',
         typeName: 'Post',
         refs: {
@@ -81,6 +94,7 @@ module.exports = {
     },
   ],
   templates: {
+    Draft: '/draft/:title',
     Tag: '/tag/:id',
   },
   transformers: {

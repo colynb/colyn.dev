@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class="container mx-auto my-16 Post">
+    <div class="container mx-auto md:my-16 Post">
       <h1 class="text-4xl font-bold leading-tight mb-3">
         {{ $page.post.title }}
       </h1>
@@ -25,8 +25,8 @@
 </template>
 
 <page-query>
-query Post ($path: String!) {
-  post: post (path: $path) {
+query Draft ($path: String!) {
+  post: draft (path: $path) {
     title
     summary
     date (format: "MMMM D, Y")
@@ -41,24 +41,8 @@ query Post ($path: String!) {
 
 <script>
 export default {
-  metaInfo() {
-    return {
-      title: this.$page.post.title,
-      meta: [
-        {
-          property: 'og:image',
-          content: require('~/favicon.png'),
-        },
-        {
-          property: 'og:title',
-          content: this.$page.post.title,
-        },
-        {
-          property: 'og:description',
-          content: this.$page.post.summary,
-        },
-      ],
-    }
+  mounted() {
+    console.log(this.$page)
   },
 }
 </script>

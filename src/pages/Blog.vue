@@ -11,6 +11,7 @@
             post.node.title
           }}</g-link>
         </h2>
+        <h3>{{ post.node.summary }}</h3>
         <div class="text-copy-secondary mb-4">
           <span>{{ post.node.date }}</span>
           <span> &middot; </span>
