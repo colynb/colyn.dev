@@ -5,7 +5,7 @@ path: /add-drafts-to-gridsome-blog
 tags:
   - 'VueJS'
   - 'Gridsome'
-summary: 'Quick way to publish a blog post but hide it from blog page'
+summary: 'Quick way to publish a blog post but hide it from a blog page'
 ---
 
 I'm sure there are a million ways to do this but for this small feature I wanted I decided that I wasn't going to google search for a solution or download some plugin, that I would just see if I knew enough to build it myself.
@@ -14,7 +14,7 @@ My only goal is to be able to make a draft publicly accessible but not show up o
 
 First, keep in mind that I'm using the markdown and file system plugins that are commonly used for building a blog with Gridsome. I don't think Gridsome provides this out of the box and I don't intend to explain in this post how to set that up. This assumes you are already creating a blog in this way.
 
-Given that the markdown renderer makes use of a "frontmatter", a block of YAML at the top of the markdown file, I knew right away that is where I would set the draft status of a blog post.
+Given that the markdown renderer makes use of "frontmatter", a block of YAML at the top of the markdown file, I knew right away that is where I would set the draft status of a blog post.
 
 ```yaml
 ---
@@ -53,7 +53,7 @@ computed: {
 },
 ```
 
-This ensures the Blog index page does not inlcude the post. If you have any other pages that list blog posts, you will need to make similar change. For instance, the Tag page will likely be showing your draft post if it includes tags.
+This ensures the Blog index page does not include the post. If you have any other pages that list blog posts, you will need to make similar change. For instance, the Tag page will likely be showing your draft post if it includes tags.
 
 From there, just make sure you change your v-for from `v-for="post in $page.posts.edges"` to `v-for="post in posts"`
 
@@ -64,3 +64,5 @@ const posts = collection.data.map((post) => {
   return pick(post, ['title', 'path', 'summary', 'status'])
 })
 ```
+
+That's it, I hope you found that helpful. Do you have any tips for making this better? Find me on Twitter [@colynb](https://twitter.com/colynb) and let me know.
