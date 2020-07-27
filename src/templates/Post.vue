@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class="container mx-auto my-16 Post">
+    <div class="container mx-auto md:my-16 Post">
       <h1 class="text-4xl font-bold leading-tight mb-3">
         {{ $page.post.title }}
       </h1>

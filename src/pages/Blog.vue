@@ -2,7 +2,7 @@
   <Layout>
     <div class="container mx-auto md:py-16">
       <div
-        v-for="post in $page.posts.edges"
+        v-for="post in posts"
         :key="post.id"
         class="post border-gray-400 border-b mb-12"
       >
@@ -56,6 +56,7 @@ query Posts ($page: Int) {
         summary
         timeToRead
         path
+        status
       }
     }
   }
@@ -66,6 +67,16 @@ query Posts ($page: Int) {
 import PaginationPosts from '../components/PaginationPosts'
 
 export default {
+  computed: {
+    posts() {
+      return this.$page.posts.edges.filter((page) => {
+        if (window.localStorage.getItem('showdrafts')) {
+          return true
+        }
+        return page.node.status !== 'draft'
+      })
+    },
+  },
   metaInfo: {
     title: 'Blog',
   },

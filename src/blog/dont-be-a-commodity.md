@@ -5,6 +5,7 @@ path: /dont-be-a-commodity
 tags:
   - 'Careers'
 summary: 'What is a commodity and why it is bad for your career?'
+status: 'draft'
 ---
 
 > com·mod·i·ty: a raw material or primary agricultural product that can be bought and sold, such as copper or coffee.
