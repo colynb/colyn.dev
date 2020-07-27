@@ -4,6 +4,7 @@ date: 2020-01-24
 path: /why-i-started-using-nuxtjs
 tags:
   - 'Javascript'
+  - 'VueJS'
   - 'NuxtJS'
   - 'NuxtJS-Series'
   - 'Web Development'

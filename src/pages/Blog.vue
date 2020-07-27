@@ -69,12 +69,9 @@ import PaginationPosts from '../components/PaginationPosts'
 export default {
   computed: {
     posts() {
-      return this.$page.posts.edges.filter((page) => {
-        if (window.localStorage.getItem('showdrafts')) {
-          return true
-        }
-        return page.node.status !== 'draft'
-      })
+      return this.$page.posts.edges.filter(
+        (page) => page.node.status !== 'draft'
+      )
     },
   },
   metaInfo: {

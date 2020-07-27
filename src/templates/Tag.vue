@@ -7,7 +7,7 @@
       </div>
 
       <div
-        v-for="post in $page.tag.belongsTo.edges"
+        v-for="post in posts"
         :key="post.node.id"
         class="post border-gray-400 border-b mb-12"
       >
@@ -61,6 +61,7 @@ query Tag ($id: ID!, $page: Int) {
     	      date (format: "MMMM D, YYYY")
             path
             summary
+            status
             tags {
               title
             }
@@ -76,13 +77,20 @@ query Tag ($id: ID!, $page: Int) {
 import PaginationPosts from '../components/PaginationPosts'
 
 export default {
+  computed: {
+    posts() {
+      return this.$page.tag.belongsTo.edges.filter(
+        (page) => page.node.status !== 'draft'
+      )
+    },
+  },
   metaInfo() {
     return {
-      title: 'Tag: ' + this.$page.tag.title
+      title: 'Tag: ' + this.$page.tag.title,
     }
   },
   components: {
-    PaginationPosts
-  }
+    PaginationPosts,
+  },
 }
 </script>
