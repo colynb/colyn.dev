@@ -31,6 +31,7 @@ query Post ($path: String!) {
     summary
     date (format: "MMMM D, Y")
     content
+    image
     tags {
       title
       path
@@ -47,7 +48,9 @@ export default {
       meta: [
         {
           property: 'og:image',
-          content: require('~/favicon.png'),
+          content: this.$page.post.image
+            ? this.$page.post.image.dataUri
+            : require('~/favicon.png'),
         },
         {
           property: 'og:title',

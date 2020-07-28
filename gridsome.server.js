@@ -53,7 +53,7 @@ module.exports = function(api, options) {
     const { collection } = store.getContentType('Post')
 
     const posts = collection.data.map((post) => {
-      return pick(post, ['title', 'path', 'summary', 'status'])
+      return pick(post, ['title', 'path', 'summary', 'status', 'image'])
     })
 
     const output = {

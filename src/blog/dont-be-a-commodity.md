@@ -6,9 +6,12 @@ tags:
   - 'Careers'
 summary: 'What is a commodity and why it is bad for your career?'
 status: 'draft'
+image: ../../static/work-2.jpeg
 ---
 
 > com·mod·i·ty: a raw material or primary agricultural product that can be bought and sold, such as copper or coffee.
+
+![Alternative text](../../static/work-2.jpeg)
 
 Human beings are not raw materials, they are not cogs. What does it mean to be a commodity as a software developer? It means that you have no other distinguishing features from any another software developer except for this mythical set of objective skills. It means that you can be swapped out by another developer with the same skills without any meaningful affect on business. You are just an interchangeable part in a much larger system. You're "software developer 2" next to a 100 other "software developer 2s". You're only hope of earning more money is to graduate to "software developer 3".
 
