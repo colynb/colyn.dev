@@ -12,20 +12,7 @@
             class="rounded-full w-32 h-32 mb-6 sm:mr-6"
           />
           <div class="mb-3">
-            Hi, I'm Colyn Brown. With 20 years of web development and design
-            experience and 5 years specializing in frontend architecture and
-            product development, I have helped numerous businesses, large and
-            small, to not only look their best and provide the best user
-            experience to their customers but to also modernize and bootstrap
-            their development processes in a way that allows them to easily
-            scale. I prefer working with product and customer driven
-            organizations, those that are passionate about solving problems and
-            creating solutions that bring a lot of value to their customers. I
-            specialize in Javascript and the necessary tools for building modern
-            web applications such as webpack, browserify, es6, reactjs, and
-            vuejs. I am currently Senior UI Architect at ForSaleByOwner.com and
-            part-time consultant with my business,
-            <strong>Infront Labs, LLC</strong>.
+            With 20 years of web development and design experience and 5 years specializing in frontend architecture and product development, I have helped numerous businesses to not only look their best and provide the best user experience to their customers but to also modernize and bootstrap their development processes enabling them to scale with their team. I work best with product and customer-driven organizations, those that are passionate about solving problems and creating solutions that bring big value to their customers. From a technical perspective, I am a full-stack developer specializing in languages required for building modern web applications such as Javascript, both on the frontend and backend. I am currently Senior UI Architect at ForSaleByOwner.com and a part-time startup technology consultant with the company I founded in 2017, InFront Labs, LLC.
           </div>
         </div>
       </div>
